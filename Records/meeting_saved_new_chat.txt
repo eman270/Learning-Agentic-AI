@@ -1,0 +1,42 @@
+2026-09-23 11:04:55 From read.ai meeting notes to Eman Sorour (direct message):
+	Mohd Ali Samsudin added read.ai meeting notes to the meeting.
+	
+	Read provides AI generated meeting summaries to make meetings more effective and efficient. View our Privacy Policy at https://www.read.ai/pp
+	
+	Type "read stop" to disable, or "opt out" to delete meeting data.
+	
+2026-09-23 11:12:36 From Karl Glaub to Everyone:
+	Can we use Codex instead? Apologies if this was covered in orientation!
+	Lukas Bronk:👍
+	
+2026-09-23 11:13:49 From Lukas Bronk to Everyone:
+	@Karl Glaub he mentioned the three main (Cursor, Claude Code or Codex) are fine to use
+	Karl Glaub:🙏
+	
+2026-09-23 11:39:04 From Aurélie M. to Everyone:
+	https://platform.openai.com/
+	
+2026-09-23 11:40:16 From Iman Mohammadshahi to Everyone:
+	is there a guidance on what which model we should use for certain applications?
+	
+2026-09-23 11:41:39 From Brooks Johnson to Everyone:
+	For anthropic/claude folks: https://platform.claude.com/dashboard
+	
+2026-09-23 11:45:22 From Bharat to Everyone:
+	You could miss useful information
+	
+2026-09-23 11:45:22 From Brooks Johnson to Everyone:
+	More tokens?
+	
+2026-09-23 11:53:44 From naresh to Everyone:
+	Would you consider a skill based approach to app development rather than rely on a traditional coding appraoch ?
+	
+2026-09-23 11:54:23 From Aki to Everyone:
+	http://localhost:3000/courses/ai-eng-syllabus/prompting-lab.html
+	
+2026-09-23 11:55:03 From Aki to Everyone:
+	https://www.promptingguide.ai/
+	
+2026-09-23 12:00:57 From Bharat to Everyone:
+	Are OPEN AI models available in Cursor? I read that they won’t be availableafter the acquisition by SpaceX.
+	

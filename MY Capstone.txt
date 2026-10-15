@@ -1,0 +1,13 @@
+Project: AI Test Failure Investigation Agent
+
+What does it do?
+It helps software developers and QA engineers investigate automated test failures and identify likely root causes from test logs and project documentation.
+
+Who is it for?
+Software developers and QA engineers who investigate failed automated tests.
+
+Most important task:
+Given a failed automated test and its error log, identify the most likely cause and recommend what to check next.
+
+Demo Day goal:
+Give the agent a real or realistic test failure, have it investigate using documentation, previous failures, and tools, then produce a grounded root-cause analysis and investigation report.

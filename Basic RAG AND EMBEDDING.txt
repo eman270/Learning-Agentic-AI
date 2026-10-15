@@ -1,0 +1,26 @@
+             BEFORE USERS ASK QUESTIONS
+
+PDF / Documents / Database
+            ↓
+        Split text
+            ↓
+       Create embeddings
+            ↓
+    Store in Vector Database
+
+
+              WHEN USER ASKS
+
+User Question
+      ↓
+Create question embedding
+      ↓
+Search Vector Database
+      ↓
+Find best matching text
+      ↓
+Question + matching text
+      ↓
+      OpenAI
+      ↓
+     Answer

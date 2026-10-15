@@ -1,0 +1,96 @@
+You are a software test failure analyst.
+
+I will provide test results below.
+
+Summarize the test results.
+
+For each failed or errored test:
+- Identify the test name.
+- Identify the error type.
+- Extract the error message.
+- Extract the expected result if available.
+- Extract the actual result if available.
+
+Do not determine the root cause yet.
+Do not suggest fixes yet.
+Do not invent information.
+
+Return the result using the required structured output schema.
+
+Test results:
+
+[PASTE TEST RESULTS HERE]
+
+
+---------------------------------
+from pydantic import BaseModel
+
+
+class TestFailure(BaseModel):
+    test_name: str
+    error_type: str
+    message: str
+    expected: str | None = None
+    actual: str | None = None
+
+
+class TestSummary(BaseModel):
+    total_tests: int
+    failures: int
+    errors: int
+    failed_tests: list[TestFailure]
+
+
+example:
+{
+  "total_tests": 25,
+  "failures": 3,
+  "errors": 1,
+  "failed_tests": [
+    {
+      "test_name": "test_login",
+      "error_type": "AssertionError",
+      "message": "Expected 200 but received 401 Unauthorized",
+      "expected": "200",
+      "actual": "401 Unauthorized"
+    },
+    {
+      "test_name": "test_create_user",
+      "error_type": "AssertionError",
+      "message": "Expected 201 but received 500 Internal Server Error",
+      "expected": "201",
+      "actual": "500 Internal Server Error"
+    },
+    {
+      "test_name": "test_delete_user",
+      "error_type": "NullPointerException",
+      "message": "NullPointerException at UserService.java:45",
+      "expected": null,
+      "actual": null
+    }
+  ]
+}
+
+
+
+example to submit: Test Results:
+
+Tests run: 25
+Failures: 3
+Errors: 1
+
+FAILED: test_login
+Expected: 200
+Actual: 401 Unauthorized
+
+FAILED: test_create_user
+Expected: 201
+Actual: 500 Internal Server Error
+
+FAILED: test_update_user
+Expected: "John"
+Actual: null
+
+ERROR: test_delete_user
+NullPointerException
+at UserService.deleteUser(UserService.java:45)

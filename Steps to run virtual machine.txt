@@ -1,0 +1,36 @@
+Steps to run virtual machine:
+
+Do these from c:\Users\shaya\AIBootcamp, in order.
+
+Open a terminal in that folder.
+Create the virtual environment, if .venv is not already there: python -m venv .venv
+Turn it on.
+Command Prompt: .venv\Scripts\activate
+PowerShell: .venv\Scripts\Activate.ps1
+Install the packages: pip install -r requirements.txt
+Put your OpenAI key in a file named .env in that same folder: OPENAI_API_KEY=your-key-here
+Start the API: uvicorn main:app --reload
+Leave that window open. The app is at http://127.0.0.1:8000.
+Send a question from a second window. The response streams events as the model writes:
+Command Prompt: curl -N -X POST http://127.0.0.1:8000/ask -H "Content-Type: application/json" -d "{\"question\":\"What is FastAPI?\"}"
+Or open http://127.0.0.1:8000/docs, choose POST /ask, and use the form.
+The server from earlier is already running on port 8000, so you can skip to step 8 if that window is still open.
+
+
+
+
+
+
+
+----------------
+Streamlit UI:
+
+streamlit run app.py
+The app is at http://localhost:8501.
+
+------------
+docker:
+
+docker build -t ask-api .
+docker run --env-file .env -p 8000:8000 -p 8501:8501 ask-api
+The API is at http://127.0.0.1:8000. The Streamlit app is at http://localhost:8501.

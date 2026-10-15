@@ -1,0 +1,6 @@
+{
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  "terminal.integrated.env.windows": {
+    "PATH": "C:\\Users\\shaya\\AppData\\Local\\Programs\\Python\\Python312;C:\\Users\\shaya\\AppData\\Local\\Programs\\Python\\Python312\\Scripts;C:\\Users\\shaya\\AppData\\Local\\Programs\\Python\\Launcher;${env:PATH}"
+  }
+}
