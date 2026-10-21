@@ -23,7 +23,8 @@ st.set_page_config(page_title="Policy agent", layout="centered")
 st.title("Policy agent")
 st.write(
     "Ask one question. The router sends policy questions to the document "
-    "search and employee questions to the records agent on port 8002."
+    "search and employee questions to the records agent at "
+    "https://records-agent.onrender.com."
 )
 
 question = st.text_area(

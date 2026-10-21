@@ -112,7 +112,7 @@ records_agent = RemoteA2aAgent(
     name="records_agent",
     agent_card=os.getenv(
         "RECORDS_AGENT_CARD_URL",
-        "http://127.0.0.1:8002/.well-known/agent-card.json",
+        "https://records-agent.onrender.com/.well-known/agent-card.json",
     ),
     description="Looks up employees in the Supabase employees table by name, department, or location.",
 )
