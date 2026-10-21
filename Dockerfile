@@ -12,6 +12,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY main.py app.py ./
 COPY ui ./ui
+COPY policy_agent ./policy_agent
 COPY nginx.conf.template /etc/nginx/conf.d/default.conf
 COPY entrypoint.sh /entrypoint.sh
 RUN sed -i 's/\r$//' /entrypoint.sh && chmod +x /entrypoint.sh
